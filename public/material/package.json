@@ -1,0 +1,53 @@
+{
+  "name": "getmdl-dashboard",
+  "version": "1.0.0",
+  "description": "Free dashboard template with Material Design Lite",
+  "keywords": [
+    "dashboard",
+    "admin template",
+    "mdl",
+    "getmdl",
+    "Material Design",
+    "Material Design Lite",
+    "Dark",
+    "dark material design"
+  ],
+  "main": "gulpfile.js",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "devDependencies": {
+    "browser-sync": "2.18.6",
+    "del": "2.2.2",
+    "gulp": "3.9.1",
+    "gulp-babel": "5.3.0",
+    "gulp-clean": "0.3.2",
+    "gulp-inject": "3.0.0",
+    "gulp-jscs": "3.0.2",
+    "gulp-jshint": "1.12.0",
+    "gulp-livereload": "3.8.1",
+    "gulp-minify-css": "1.2.4",
+    "gulp-plumber": "1.0.2",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "2.1.1",
+    "gulp-uglify": "1.4.2",
+    "gulp-watch": "4.3.11",
+    "jshint-stylish": "2.0.1",
+    "node-sass": "4.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CreativeIT/getmdl-dashboard.git"
+  },
+  "author": "CreativeIT",
+  "bugs": {
+    "url": "https://github.com/CreativeIT/dashboard/issues"
+  },
+  "homepage": "https://github.com/CreativeIT/dashboard#readme"
+}
