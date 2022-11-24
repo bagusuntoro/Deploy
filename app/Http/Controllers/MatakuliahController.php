@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Matakuliah;
 use DB;
+use PDF;
 
 
 class MatakuliahController extends Controller
@@ -44,6 +45,14 @@ class MatakuliahController extends Controller
         $data = Matakuliah::find($id);
         $data->delete();
         return redirect()->route('matakuliah')->with('success', 'Data Berhasil di Delete');
+    }
+
+    public function report(){
+        $data_matakuliah = Matakuliah::all();
+        $pdf = PDF::loadView('report.matakuliah', [
+            'data' => $data_matakuliah
+        ]);
+        return $pdf->stream();
     }
 
     

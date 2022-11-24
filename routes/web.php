@@ -55,6 +55,7 @@ Route::get('/tampilDataMatakuliah/{id}', [MatakuliahController::class, 'tampilDa
 Route::post('updateMatkul/{id}', [MatakuliahController::class, 'updateMatkul'])->name('updateMatkul');
 
 Route::get('/deleteMatakuliah/{id}', [MatakuliahController::class, 'delete'])->name('delete');
+Route::get('/matakuliah/laporan', [MatakuliahController::class, 'report'])->name('dalete');
 
 
 // for presensi
@@ -66,6 +67,7 @@ Route::get('/tampilDataPresensi/{id}', [PresensiController::class, 'tampilDataPr
 Route::post('/updatePresensi/{id}', [PresensiController::class, 'updatePresensi'])->name('updatePresensi');
 
 Route::get('/deletePresensi/{id}', [PresensiController::class, 'deletePresensi'])->name('deletePresensi');
+Route::get('/presensi/laporan', [PresensiController::class, 'report'])->name('dalete');
 
 
 

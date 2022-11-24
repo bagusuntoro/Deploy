@@ -136,34 +136,34 @@ scratch. This page gets rid of all links and provides the needed markup only.
                with font-awesome or any other icon font library -->
                <li class="nav-item">
                  <a href="/dashboard" class="nav-link">
-                   <i class="nav-icon fas fa-th"></i>
+                 <i class="bi bi-bar-chart-line-fill"></i>
                    <p>Grafik Perkuliahan</p>
                  </a>
                </li>
           <li class="nav-item menu-open">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+            
               <p>
-                Data Mahasiswa
+              Master Data
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="/mahasiswa" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="bi bi-people-fill"></i>
                   <p>Mahasiswa</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/matakuliah" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="bi bi-book-fill"></i>
                   <p>Matakuliah</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/presensi" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="bi bi-person-check-fill"></i>
                   <p>Presensi</p>
                 </a>
               </li>
@@ -237,7 +237,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </tbody>
         </table>
 
-        <a href="/dashboard"><img src="https://img.icons8.com/tiny-glyph/16/null/reply-arrow.png"/></a>
+        <a href="/dashboard" class="btn btn-danger">Back</a> 
       </div><!-- /.container-fluid -->
     </div>
 

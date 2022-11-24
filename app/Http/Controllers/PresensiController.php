@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Presensi;
 use DB;
+use PDF;
 
 class PresensiController extends Controller
 {
@@ -46,4 +47,13 @@ class PresensiController extends Controller
 
         return redirect()->route('presensi')->with('success', 'Data Berhasil di Delete');
     }
+
+    public function report(){
+        $data_presensi = Presensi::all();
+        $pdf = PDF::loadView('report.presensi', [
+            'data' => $data_presensi
+        ]);
+        return $pdf->stream();
+    }
+
 }
