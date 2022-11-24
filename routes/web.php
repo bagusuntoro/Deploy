@@ -41,6 +41,7 @@ Route::get('/tampilDataMahasiswa/{id}', [MahasiswaController::class, 'tampilData
 Route::post('/updateDataMahasiswa/{id}', [MahasiswaController::class, 'updateDataMahasiswa'])->name('updatedata');
 
 Route::get('/deleteMahasiswa/{id}', [MahasiswaController::class, 'daleteMahasiswa'])->name('dalete');
+Route::get('/mahasiswa/laporan', [MahasiswaController::class, 'report'])->name('dalete');
 
 
 

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Mahasiswa;
+use PDF;
+use DB;
 
 class MahasiswaController extends Controller
 {
@@ -44,5 +46,14 @@ class MahasiswaController extends Controller
         $data->delete();
 
         return redirect()->route('mahasiswa')->with('success', 'Data Berhasil di Delete');
+    }
+
+    public function report(){
+        // $data_mahasiswa = DB::table('mahasiswa')-get();
+        $data_mahasiswa = Mahasiswa::all();
+        $pdf = PDF::loadView('report.mahasiswa', [
+            'data' => $data_mahasiswa
+        ]);
+        return $pdf->stream();
     }
 }
